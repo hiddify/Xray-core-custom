@@ -470,9 +470,9 @@ func (c *REALITYConfig) Build() (proto.Message, error) {
 		if c.Xver > 2 {
 			return nil, newError(`invalid PROXY protocol version, "xver" only accepts 0, 1, 2`)
 		}
-		if len(c.ServerNames) == 0 {
-			return nil, newError(`empty "serverNames"`)
-		}
+		// if len(c.ServerNames) == 0 {
+		// 	return nil, newError(`empty "serverNames"`)
+		// }
 		if c.PrivateKey == "" {
 			return nil, newError(`empty "privateKey"`)
 		}
