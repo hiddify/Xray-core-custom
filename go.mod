@@ -61,3 +61,5 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+replace github.com/xtls/reality => github.com/hiddify/reality v0.0.0-20231122130655-8152d93bef7c
